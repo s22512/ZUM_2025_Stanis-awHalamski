@@ -2,60 +2,54 @@
 
 ## **1. Informacje ogólne**
 **Nazwa projektu:**  
-*(np. Klasyfikacja wydźwięku w tweetach o wojnie)*  
+wykrywanie pozytywnych i negatywnych opinii na temat produktów 
 
 **Autor:**  
-Imię i nazwisko  
+Stanisław Halamski 
 
 **Kierunek, rok i tryb studiów:**  
-*(np. Informatyka, semestr V)*  
+Informatyka, semestr V  
 
 **Data oddania projektu:**  
-dd.mm.rrrr  
+22.12.2001  
 
 ---
 
 ## **2. Opis projektu**
-Krótki opis projektu – czego dotyczy, jaki problem rozwiązuje, w jakim kontekście może być użyteczny.  
+Celem projektu jest automatyczna analiza opinii użytkowników na temat produktów oraz klasyfikacja ich wydźwięku jako pozytywnego lub negatywnego. Projekt wykorzystuje metody przetwarzania języka naturalnego (NLP) oraz różne podejścia uczenia maszynowego – od klasycznych algorytmów, przez sieci neuronowe, aż po nowoczesne modele transformerowe.
 
-**Przykład:**  
-> Celem projektu jest klasyfikacja emocji w tekstach z mediów społecznościowych. Projekt pozwala na analizę nastrojów użytkowników Twittera dot. wojny z wykorzystaniem metod NLP i uczenia maszynowego.
+Tego typu rozwiązania mogą być wykorzystywane m.in. w systemach rekomendacji, analizie satysfakcji klientów, monitorowaniu opinii w e-commerce oraz wsparciu decyzji biznesowych.  
 
----
 
 ## **3. Dane**
 **Źródło danych:**  
-*(np. HuggingFace, Kaggle, własny zbiór danych)*  
-
+Kaggle 
 **Link do danych:**  
-`https://...`  
+https://www.kaggle.com/datasets/bittlingmayer/amazonreviews  
 
 **Opis danych:**  
-- liczba próbek:  
-- liczba cech / kolumn:  
-- format danych:  
-- rodzaj etykiet / klas:  
-- licencja:  
+liczba próbek: ok. 50 000
+liczba cech / kolumn: 2–3
+format danych: CSV
+rodzaj etykiet / klas:
+0 – opinia negatywna
+1 – opinia pozytywna
 
+licencja: zgodna z licencją Kaggle
 
-**Uwaga dotycząca danych:**  
-Nie wrzucaj do repozytorium pełnego zbioru danych!  
-- Jeśli dane są duże, zamieść **jedynie niewielką próbkę** (np. 100–200 rekordów lub kilka obrazów / plików audio) w folderze `data/sample/`, aby pokazać strukturę danych.  
-- Pełen zbiór powinien być pobierany w kodzie (np. z HuggingFace lub Kaggle API) lub dostępny przez link w README.  
-- Dzięki temu repozytorium pozostanie czyste i zgodne z zasadami licencyjnymi.
+Uwagi:
+usunięto brakujące wartości
+skrócono bardzo długie recenzje
+teksty zostały wstępnie oczyszczone z duplikatów 
 
-**Uwagi:**  
-*(np. dane zostały oczyszczone z duplikatów, usunięto brakujące wartości, itp.)*
-
----
 
 ## **4. Cel projektu**
-Sprecyzuj cel biznesowy lub badawczy projektu:  
-- Co ma robić model?  
-- Jakie pytanie ma odpowiadać lub jaką klasyfikację przeprowadzać?  
-- Jakie decyzje lub wnioski można z projektu wyciągnąć?
+Celem projektu jest zbudowanie modelu, który:
+- automatycznie rozpoznaje wydźwięk opinii o produktach,
+- klasyfikuje tekst jako pozytywny lub negatywny,
+- umożliwia porównanie skuteczności różnych podejść ML.
 
----
+Na podstawie wyników możliwe jest określenie, które metody najlepiej radzą sobie z analizą sentymentu w tekstach recenzji.
 
 ## **5. Struktura projektu**
 Projekt składa się z czterech głównych etapów, każdy w osobnym notatniku `.ipynb`:
