@@ -11,7 +11,7 @@ Stanisław Halamski
 Informatyka, semestr V  
 
 **Data oddania projektu:**  
-22.12.2001  
+18.01.2026  
 
 ---
 
